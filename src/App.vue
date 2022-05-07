@@ -1,30 +1,35 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <v-select
+      :options="selectOptions"
+      @selectedOption="showSelectedOption"
+      :selected="selected"
+    />
+  </div>
 </template>
 
+<script>
+import VSelect from "@/components/VSelect.vue";
+
+export default {
+  components: { VSelect },
+  data: () => ({
+    selectOptions: [
+      {name: "option 1", value: 1},
+      {name: "option 2", value: 2},
+      {name: "option 3", value: 3},
+      {name: "option 4", value: 4},
+      {name: "option 5", value: 5},
+    ],
+    selected:'select'
+  }),
+  methods:{
+    showSelectedOption(option){
+      this.selected = option.name
+    }
+  }
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

@@ -11,8 +11,11 @@
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
+    "@vue/cli": "^5.0.8",
     "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.2"
   },
   "browserslist": [
     "> 1%",

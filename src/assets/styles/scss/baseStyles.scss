@@ -1,6 +1,6 @@
 //base styles
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	// box-sizing: border-box;
@@ -8,13 +8,21 @@
 
 html,
 body {
-	font-family: 'Source Sans Pro', sans-serif !important;
+	font-family: "Source Sans Pro", sans-serif !important;
 	height: 100%;
-	background: #E5E5E5;	
+	background: #333;
 }
 
+p,
+a {
+	color: white;
+	text-decoration: none;
+}
 
-input, textarea :active, :hover, :focus {
+input,
+textarea :active,
+:hover,
+:focus {
 	outline: 0;
 	outline-offset: 0;
 }
@@ -32,6 +40,6 @@ input, textarea :active, :hover, :focus {
 
 .container {
 	width: 100%;
-	max-width: 1600px;
+	max-width: 1300px;
 	margin: 0 auto;
 }

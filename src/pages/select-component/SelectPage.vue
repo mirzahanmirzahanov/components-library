@@ -15,7 +15,7 @@ import VSelect from "@/components/select/VSelect.vue";
 
 export default {
   components: { VSelect },
-  name: "SelectPage",
+  name: "select-page",
   data: () => ({
     selectOptions: [
       { name: "option 1", value: 1 },

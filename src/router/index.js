@@ -3,18 +3,24 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import HomePage from "@/pages/HomePage.vue";
 import SelectPage from "@/pages/select-component/SelectPage.vue";
+import FormPage from "@/pages/form-component/FormPage.vue";
 
 const routes = [
   {
     path: '/',
-    name: 'HomePage',
+    name: 'home-page',
     component: HomePage
   },
   {
     path: '/select',
-    name: 'SelectPage',
+    name: 'select-page',
     component: SelectPage
-  }
+  },
+  {
+    path: '/form',
+    name: 'form-page',
+    component: FormPage
+  },
 ]
 
 const router = createRouter({
